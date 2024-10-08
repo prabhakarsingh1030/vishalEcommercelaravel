@@ -42,9 +42,7 @@
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
-                            <a href="#">
-                                <img src="images/icon/logo.png" alt="CoolAdmin">
-                            </a>
+                         <h2> {{Config::get('constant.site_name')}}</h2>
                         </div>
                         <div class="login-form">
                             <form action="{{route('admin.auth')}}" method="post">
@@ -66,12 +64,7 @@
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
                                
                             </form>
-                            <div class="register-link">
-                                <p>
-                                    Don't you have account?
-                                    <a href="#">Sign Up Here</a>
-                                </p>
-                            </div>
+                           
                             
                             
                         </div>
