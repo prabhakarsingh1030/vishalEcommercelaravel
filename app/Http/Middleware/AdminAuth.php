@@ -19,7 +19,7 @@ class AdminAuth
 
         }else{
             $request->session()->flash('error','Access Denied');
-            return redirect('/login');
+            return redirect('/admin/login');
         }
         return $next($request);
     }

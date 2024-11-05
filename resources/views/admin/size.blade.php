@@ -17,14 +17,14 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="{{url('admin/category/manage_category')}}" class="btn btn-primary mb-1">Add Category</a>
+                        <a href="{{url('admin/size/manage_size')}}" class="btn btn-primary mb-1">Add Size</a>
                         <div class="table-responsive table--no-card m-b-40">
                             <table class="table table-borderless table-striped table-earning">
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>CATEGORY NAME</th>
-                                        <th>CATEGORY SLUG</th>
+                                        <th>size</th>
+                                        <th>Status</th>
                                         <th>
                                             ACTION
                                         </th>
@@ -36,30 +36,30 @@
                                     @foreach ($data as $value)
                                         <tr>
                                             <td>{{ $value->id }}</td>
-                                            <td>{{ $value->category_name }}</td>
-                                            <td>{{ $value->category_slug }}</td>
+                                            <td>{{ $value->size }}</td>
+                                            
                                             <td>
 
                                                 @if($value->status == 1)
 
-                                                <a href="{{ url('admin/category/status/0') }}/{{$value->id}}">
+                                                <a href="{{ url('admin/size/status/0') }}/{{$value->id}}">
                                                     <button class="btn btn-success">Active</button>
                                                 </a>
                                                 @else
-                                                <a href="{{ url('admin/category/status/1') }}/{{$value->id}}">
+                                                <a href="{{ url('admin/size/status/1') }}/{{$value->id}}">
                                                     <button class="btn btn-primary">Deactive</button>
                                                 </a>
 
                                                 @endif
 
-                                               
+                                            </td><td>
 
 
 
-                                                <a href="{{ url('admin/category/manage_category') }}/{{$value->id}}">
+                                                <a href="{{ url('admin/size/manage_size') }}/{{$value->id}}">
                                                     <button class="btn btn-primary">Edit</button>
                                                 </a>
-                                                <a href="{{ route('category.delete', ['id' => $value->id]) }}">
+                                                <a href="{{ route('size.delete', ['id' => $value->id]) }}">
                                                     <button class="btn btn-danger">Delete</button>
                                                 </a>
 

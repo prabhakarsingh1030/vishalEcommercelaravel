@@ -13,14 +13,16 @@ class AdminController extends Controller
      */
     public function index(Request $request)
     {
-        if($request->session()->has('ADMIN_LOGIN')){
+        // if($request->session()->has('ADMIN_LOGIN')){
 
-        }else{
-            $request->session()->flash('error','Access Denied');
-            return redirect('/login');
-        }
+        //     return redirect('admin/dashboard');
+        // }else{
+        //     $request->session()->flash('error','Access Denied');
+        //     return redirect('admin/login');
+        // }
         
         return view('admin.login');
+
     }
 
 
@@ -60,6 +62,8 @@ class AdminController extends Controller
 
     public function updatepass(){
         $data = Admin::find(1);
+        // dd($data);
+        // die();
         $data->password = Hash::make('123');
         $data->save();
 
@@ -75,6 +79,6 @@ class AdminController extends Controller
 
     public  function logout(){
         session()->forget(['ADMIN_LOGIN', 'ID']);
-         return redirect('/login')->with('error','Successfully Logged out');
+         return redirect('admin/login')->with('error','Successfully Logged out');
     }
 }

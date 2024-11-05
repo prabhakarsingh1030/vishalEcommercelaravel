@@ -13,27 +13,31 @@
     <title>Dashboard</title>
 
     <!-- Fontfaces CSS-->
-    <link href="{{asset('backend/css/font-face.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/css/font-face.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet"
+        media="all">
+    <link href="{{ asset('backend/vendor/font-awesome-5/css/fontawesome-all.min.css') }}" rel="stylesheet"
+        media="all">
+    <link href="{{ asset('backend/vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet"
+        media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="{{asset('backend/vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/bootstrap-4.1/bootstrap.min.css') }}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="{{asset('backend/vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/wow/animate.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/slick/slick.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('backend/vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/animsition/animsition.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css') }}"
+        rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/wow/animate.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/css-hamburgers/hamburgers.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/slick/slick.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/vendor/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="{{asset('backend/css/theme.css')}}" rel="stylesheet" media="all">
+    <link href="{{ asset('backend/css/theme.css') }}" rel="stylesheet" media="all">
 
-<meta name="robots" content="index, nofollow">
+    <meta name="robots" content="index, nofollow">
 </head>
 
 <body class="animsition">
@@ -106,7 +110,8 @@
                                     <a href="https://colorlib.com/polygon/cooladmin/register.html">Register</a>
                                 </li>
                                 <li>
-                                    <a href="https://colorlib.com/polygon/cooladmin/forget-pass.html">Forget Password</a>
+                                    <a href="https://colorlib.com/polygon/cooladmin/forget-pass.html">Forget
+                                        Password</a>
                                 </li>
                             </ul>
                         </li>
@@ -130,7 +135,8 @@
                                     <a href="https://colorlib.com/polygon/cooladmin/alert.html">Alerts</a>
                                 </li>
                                 <li>
-                                    <a href="https://colorlib.com/polygon/cooladmin/progress-bar.html">Progress Bars</a>
+                                    <a href="https://colorlib.com/polygon/cooladmin/progress-bar.html">Progress
+                                        Bars</a>
                                 </li>
                                 <li>
                                     <a href="https://colorlib.com/polygon/cooladmin/modal.html">Modals</a>
@@ -142,7 +148,8 @@
                                     <a href="https://colorlib.com/polygon/cooladmin/grid.html">Grids</a>
                                 </li>
                                 <li>
-                                    <a href="https://colorlib.com/polygon/cooladmin/fontawesome.html">Fontawesome Icon</a>
+                                    <a href="https://colorlib.com/polygon/cooladmin/fontawesome.html">Fontawesome
+                                        Icon</a>
                                 </li>
                                 <li>
                                     <a href="https://colorlib.com/polygon/cooladmin/typo.html">Typography</a>
@@ -169,6 +176,18 @@
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="{{url('admin/category')}}">CATEGORY</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('admin/coupon')}}">Coupon</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('admin/size')}}">Size</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('admin/color')}}">Color</a>
+                                </li>
                                 <li>
                                     <a href="https://colorlib.com/polygon/cooladmin/index.html">Dashboard 1</a>
                                 </li>
@@ -214,7 +233,8 @@
                                     <a href="https://colorlib.com/polygon/cooladmin/register.html">Register</a>
                                 </li>
                                 <li>
-                                    <a href="https://colorlib.com/polygon/cooladmin/forget-pass.html">Forget Password</a>
+                                    <a href="https://colorlib.com/polygon/cooladmin/forget-pass.html">Forget
+                                        Password</a>
                                 </li>
                             </ul>
                         </li>
@@ -238,7 +258,8 @@
                                     <a href="https://colorlib.com/polygon/cooladmin/alert.html">Alerts</a>
                                 </li>
                                 <li>
-                                    <a href="https://colorlib.com/polygon/cooladmin/progress-bar.html">Progress Bars</a>
+                                    <a href="https://colorlib.com/polygon/cooladmin/progress-bar.html">Progress
+                                        Bars</a>
                                 </li>
                                 <li>
                                     <a href="https://colorlib.com/polygon/cooladmin/modal.html">Modals</a>
@@ -250,7 +271,8 @@
                                     <a href="https://colorlib.com/polygon/cooladmin/grid.html">Grids</a>
                                 </li>
                                 <li>
-                                    <a href="https://colorlib.com/polygon/cooladmin/fontawesome.html">Fontawesome Icon</a>
+                                    <a href="https://colorlib.com/polygon/cooladmin/fontawesome.html">Fontawesome
+                                        Icon</a>
                                 </li>
                                 <li>
                                     <a href="https://colorlib.com/polygon/cooladmin/typo.html">Typography</a>
@@ -271,14 +293,15 @@
                     <div class="container-fluid">
                         <div class="header-wrap">
                             <form class="form-header" action="#" method="POST">
-                                
+
                             </form>
                             <div class="header-button">
-                              
+
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="https://colorlib.com/polygon/cooladmin/images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="https://colorlib.com/polygon/cooladmin/images/icon/avatar-01.jpg"
+                                                alt="John Doe" />
                                         </div>
                                         <div class="content">
                                             <a class="js-acc-btn" href="#">john doe</a>
@@ -287,14 +310,18 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="https://colorlib.com/polygon/cooladmin/images/icon/avatar-01.jpg" alt="John Doe" />
+                                                        <img src="https://colorlib.com/polygon/cooladmin/images/icon/avatar-01.jpg"
+                                                            alt="John Doe" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
                                                         <a href="#">john doe</a>
                                                     </h5>
-                                                    <span class="email"><a href="https://colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="711b1e191f151e14311409101c011d145f121e1c">[email&#160;protected]</a></span>
+                                                    <span class="email"><a
+                                                            href="https://colorlib.com/cdn-cgi/l/email-protection"
+                                                            class="__cf_email__"
+                                                            data-cfemail="711b1e191f151e14311409101c011d145f121e1c">[email&#160;protected]</a></span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">
@@ -302,8 +329,8 @@
                                                     <a href="#">
                                                         <i class="zmdi zmdi-account"></i>Account</a>
                                                 </div>
-                                              
-                                              
+
+
                                             </div>
                                             <div class="account-dropdown__footer">
                                                 <a href="logout">
